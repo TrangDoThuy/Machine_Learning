@@ -22,3 +22,35 @@ child_obj.child_function()
 # output: printing from child function the member variable with value 1
 ```
 
+## Numpy
+
+```
+import numpy as np
+```
+
+### Create array:
+```
+np.ones(5)
+# output: array([1., 1., 1., 1., 1.])
+```
+
+```
+np.zeros(5)
+# output: array([0., 0., 0., 0., 0.])
+```
+
+Generate 1D, 2D and 3D array:
+
+```
+# generate random numbers
+np.random.seed(4211)  # seed for reproducibility
+
+x1 = np.random.randint(10, size=6)  # One-dimensional array
+x2 = np.random.randint(10, size=(3, 4))  # Two-dimensional array
+x3 = np.random.randint(10, size=(3, 4, 5))  # Three-dimensional array
+
+print('x1', x1)
+print('x2', x2)
+print('x3', x3)
+```
+
