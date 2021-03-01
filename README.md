@@ -53,4 +53,35 @@ print('x1', x1)
 print('x2', x2)
 print('x3', x3)
 ```
+Find dimension, shape, and size of array:
 
+```
+print("x3 ndim: ", x3.ndim)
+print("x3 shape:", x3.shape)
+print("x3 size: ", x3.size)
+```
+
+Data type
+
+```
+print("dtype:", x3.dtype)
+```
+### One-hot encoding:
+```
+# create an identity matrix
+one_hots = np.eye(10)
+print(one_hots) # each row represent a digit from 0 to 9 (e.g., MNIST)
+```
+
+```
+[[1. 0. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 1. 0. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 1. 0. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 1. 0. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 1. 0. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 1. 0. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 1. 0. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 1. 0. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
+ [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]]
+```
