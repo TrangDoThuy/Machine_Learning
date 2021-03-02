@@ -85,3 +85,34 @@ print(one_hots) # each row represent a digit from 0 to 9 (e.g., MNIST)
  [0. 0. 0. 0. 0. 0. 0. 0. 1. 0.]
  [0. 0. 0. 0. 0. 0. 0. 0. 0. 1.]]
 ```
+
+### Drop all duplicate values:
+
+```
+train.drop_duplicates(subset = None, 
+                     keep = False, inplace = True) 
+```
+
+### Check the missing value:
+
+```
+# check the missing values (NaN)
+train.isna().sum()
+# if there are missing values, you can use 'fillna' to fill in with the expected values.
+```
+
+```
+# fill missing value with median:
+train = train.fillna(train.mean())
+```
+
+### Visualize the correlation of features using iloc & heatmap
+
+```
+import seaborn as sns
+
+df_corr = df.iloc[:,:-1].corr()
+sns.heatmap(df_corr)
+```
+
+
